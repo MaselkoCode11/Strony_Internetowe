@@ -1,0 +1,101 @@
+/* === Reset i zmienne === */
+:root {
+	--color-primary: #007bff;
+	--color-accent: #17a2b8;
+	--color-highlight: #ffc107;
+	--color-bg: #1e1e2e;
+	--color-text: #e0e0e0;
+	--color-border: #444;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #121212;
+	color: var(--color-text);
+}
+.player-card {
+	max-width: 500px;
+	margin: 40px auto;
+	padding: 20px;
+	border: 3px solid var(--color-primary);
+	background-color: var(--color-bg);
+	transition: transform 0.2s ease;
+}
+.player-card:hover {
+	transform: scale(1.01);
+}
+.card-header {
+	padding: 15px;
+	margin-bottom: 15px;
+	border-bottom: 2px solid var(--color-accent);
+	text-align: center;
+}
+.card-section {
+	padding: 15px;
+	margin-bottom: 15px;
+	border: 1px solid var(--color-border);
+	border-radius: 8px;
+}
+.card-section:hover {
+	border-color: var(--color-primary);
+	box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+.card-section h2 {
+	margin-bottom: 10px;
+	color: var(--color-accent);
+}
+.bio {
+	border-left: 4px solid #28a745;
+}
+.equipment {
+	border-left: 4px solid #fd7e14;
+}
+.achievements {
+	border-left: 4px solid #6f42c1;
+}
+.card-section ul {
+	list-style: none;
+	padding-left: 0;
+}
+.card-section li {
+	padding: 5px 0;
+	border-bottom: 1px dashed var(--color-border);
+}
+.card-section li:last-child {
+	border-bottom: none;
+}
+.card-section li:hover {
+	background-color: rgba(255, 255, 255, 0.05);
+	padding-left: 5px;
+}
+.highlight {
+	color: var(--color-highlight);
+	font-weight: bold;
+}
+.card-footer {
+	padding: 10px;
+	margin-top: 15px;
+	border-top: 2px solid var(--color-accent);
+	text-align: center;
+	font-size: 0.85em;
+}
+.achievements details {
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px dashed var(--color-border);
+	border-radius: 5px;
+}
+.achievements summary {
+	cursor: pointer;
+	color: var(--color-accent);
+	font-weight: bold;
+}
+.achievements summary:hover {
+	color: var(--color-highlight);
+}
