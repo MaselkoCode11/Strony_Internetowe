@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 15%);
+}
+
+.postcard {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  /* TODO: background sky gradient */
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(255, 195, 0, 1) 100%);
+}
+.sun {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  width: 80px;
+  height: 80px;
+  /* TODO: sun shape and glow */
+  border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+background: #ebff00;
+  /* TODO: sun color experiment */
+  box-shadow: 20px 18px 400px 20px rgba(249,255,0,1);
+-webkit-box-shadow: 20px 18px 400px 20px rgba(249,255,0,1);
+-moz-box-shadow: 20px 18px 400px 20px rgba(249,255,0,1);
+}
+
+.hills {
+  position: absolute;
+  bottom: 30%;
+  left: -10%;
+  width: 120%;
+  height: 45%;
+  /* TODO: hills shape */
+  background: radial-gradient(circle,rgba(0, 133, 4, 1) 0%, rgba(0, 148, 5, 1) 100%);
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+}
+
+.water {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32%;
+  /* TODO: water color and transparency */
+  background: linear-gradient(0deg,rgba(34, 195, 195, 1) 0%, rgba(45, 118, 253, 1) 100%);
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: Georgia, serif;
+  /* TODO: text styling and shadow */
+  text-shadow: -6px 7px 13px rgba(203,255,0,0.75);
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  /* TODO: text color experiment */
+}
+
+.tree-top{
+  border-radius: 50%;
+  background: hsl(130, 100%, 35%);
+  width: 60px;
+  height: 60px;
+}
+
+.tree-trunk{
+  width: 14px;
+  height: 30px;
+  background: hsl(30, 50%, 30%);
+  margin: auto;
+}
+
+.tree{
+  position: absolute;
+  left: 10%;
+  top: 45%;
+}
