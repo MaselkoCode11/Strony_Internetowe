@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+nav {
+  background-color: #222;
+  /* TODO: ustaw position dla nav (sticky, top: 0, z-index: 10) */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 8px 16px;
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.gallery {
+  padding: 16px;
+  /* TODO: dodaj clearfix dla .gallery (::after z clear: both) */
+}
+
+.photo-item {
+  /* TODO: dodaj float: left, width: 30%, margin: 1.5%, position: relative */
+  float: left;
+  width: 30%;
+  margin: 1.5%;
+  position: relative;
+}
+
+.photo-item img {
+  /* TODO: nadaj obrazkom w .photo-item szerokość 100% i display: block */
+  width: 100%;
+  display: block;
+}
+
+.photo-caption {
+  /* TODO: dodaj style dla nakładki (position: absolute, bottom: 0, margin: 0, tło półprzezroczyste) */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 4px 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  clear: both;
+}
+
+/* TODO: dodaj regułę @media dla ekranów do 768px (.photo-item width: 46%) */
+@media (max-width: 768px) {
+  .photo-item {
+    width: 46%;
+  }
+}
+
+/* TODO: dodaj regułę @media dla ekranów do 480px (.photo-item width: 96%, float: none) */
+@media (max-width: 480px) {
+  .photo-item {
+    width: 96%;
+  }
+}
